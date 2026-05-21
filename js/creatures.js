@@ -37,11 +37,10 @@ function showType()
     alert("showType()");
     */
     let creatures = document.querySelectorAll(".creature");
-
     for (let i=0; i<creatures.length; i++) {
 
       if (creatures[i].dataset.type === "animal") {
-        creatures[i].style.border = "2pi solid red";
+        creatures[i].style.border = "2px solid red";
       }
       else if (creatures[i].dataset.type === "insect") {
         creatures[i].style.border = "2px dashed orange";
@@ -60,10 +59,13 @@ function clearAll()
         
     alert("clearAll()");
     */
+
+    let creatures = document.querySelectorAll(".creature");
+
     for (let i=0; i<creatures.length; i++) {
-        creatures[i].style.backgroundColor = white;
+        creatures[i].style.backgroundColor = "white";
         creatures[i].style.border = "2px solid black";
-      }
+    }
 }//end clearAll()
 
 const button = document
